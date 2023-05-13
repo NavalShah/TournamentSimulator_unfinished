@@ -1,9 +1,14 @@
 import javax.swing.*;
 import java.awt.*;
 public class Board extends JPanel{
+    int width;
+    int height;
     JFrame frame;
     Color background_color;
     public Board(int width, int height, Color color) {
+        this.background_color = color;
+        this.width = width;
+        this.height = height; 
         frame = new JFrame();
         frame.add(this);
         frame.setSize(width, height);
